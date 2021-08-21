@@ -1,5 +1,5 @@
-const { Then } = require('@cucumber/cucumber');
+import { Then } from '@cucumber/cucumber';
 
-Then('I should be greeted', function () {
-  return 'Hello'
+Then('I should be greeted', () => {
+  return 'Hello';
 });

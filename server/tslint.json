@@ -1,0 +1,40 @@
+{
+  "extends": [
+    "tslint-config-airbnb"
+  ],
+  "plugins": [
+    "jest"
+  ],
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "import-name": false,
+    "variable-name": false,
+    "ter-arrow-parens": [
+      true,
+      "as-needed"
+    ],
+    "ter-computed-property-spacing": false,
+    "no-boolean-literal-compare": true,
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "(^import)+|(`)+"
+      }
+    ],
+    "no-console": {
+      "severity": "error",
+      "options": [
+        "debug",
+        "info",
+        "log",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    },
+    "align": false
+  }
+}

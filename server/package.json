@@ -5,6 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc --project './tsconfig.json'",
+    "dev": "tsc --project './tsconfig.json' --watch & NODE_ENV=development nodemon build",
+    "lint-staged": "lint-staged",
+    "lint": "./node_modules/.bin/tslint -c tslint.json -p './tsconfig.json' --fix",
     "test": "cucumber-js server/src/test/features/**/*.feature --format summary"
   },
   "keywords": [],
@@ -12,10 +16,15 @@
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.1",
-    "@types/node": "^16.7.1"
+    "@types/node": "^16.7.1",
+    "nodemon": "^2.0.12",
+    "tslint": "^6.1.3",
+    "tslint-config-airbnb": "^5.11.2"
   },
   "dependencies": {
     "@rangk/common": "0.1.0",
+    "@types/express": "^4.17.13",
+    "express": "^4.17.1",
     "typescript": "^4.3.5"
   }
 }
