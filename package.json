@@ -2,6 +2,11 @@
   "name": "rangk",
   "private": true,
   "main": "index.ts",
+  "workspaces": [
+    "client",
+    "common",
+    "server"
+  ],
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.1",
     "lerna": "^4.0.0"

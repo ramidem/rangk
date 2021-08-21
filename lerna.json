@@ -1,8 +1,8 @@
 {
   "packages": [
-    "@rangk/client",
-    "@rangk/common",
-    "@rangk/server"
+    "client/",
+    "common/",
+    "server/"
   ],
   "useWorkspace": true,
   "version": "0.1.1",
