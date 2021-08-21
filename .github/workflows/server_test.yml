@@ -22,4 +22,4 @@ jobs:
         with:
           node-version: "14.17.5"
       - run: npm install
-      - run: cd server && npm cucumber
+      - run: cd server && npm test

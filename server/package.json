@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cucumber": "cucumber-js server/src/test/features/**/*.feature --format summary"
+    "test": "cucumber-js server/src/test/features/**/*.feature --format summary"
   },
   "keywords": [],
   "author": "",
