@@ -13,10 +13,11 @@
     "lint-staged": "^11.1.2"
   },
   "scripts": {
-    "lint:server": "npm --prefix server run typecheck",
+    "lint:server": "npm --prefix server run lint",
     "postinstall": "lerna bootstrap",
     "prepare": "husky install",
-    "test:server": "npm --prefix server run test"
+    "test:server": "npm --prefix server run test",
+    "typecheck:server": "npm --prefix server run typecheck"
   },
   "dependencies": {
     "husky": "^7.0.1"
