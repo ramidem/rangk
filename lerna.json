@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "@rangk/client",
+    "@rangk/common",
+    "@rangk/server"
+  ],
+  "useWorkspace": true,
+  "version": "0.1.1",
+  "npmClient": "npm"
+}

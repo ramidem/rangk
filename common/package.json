@@ -1,0 +1,7 @@
+{
+ "client": "npm",
+ "name": "@rangk/common",
+ "version": "0.1.0",
+ "main": "index.ts"
+
+}
