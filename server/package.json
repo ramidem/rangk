@@ -9,7 +9,8 @@
     "dev": "tsc --project './tsconfig.json' --watch & NODE_ENV=development nodemon build",
     "lint-staged": "lint-staged",
     "lint": "./node_modules/.bin/tslint -c tslint.json -p './tsconfig.json' --fix",
-    "test": "cucumber-js server/src/test/features/**/*.feature --format summary"
+    "test": "cucumber-js server/src/test/features/**/*.feature --format summary",
+    "typecheck": "tsc --noEmit --forceConsistentCasingInFileNames"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +28,11 @@
     "express": "^4.17.1",
     "helmet": "^4.6.0",
     "typescript": "^4.3.5"
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "npm run lint",
+      "git add ."
+    ]
   }
 }
