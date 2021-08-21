@@ -13,15 +13,17 @@
     "lint-staged": "^11.1.2"
   },
   "scripts": {
-    "test:server": "npm --prefix server run typecheck && npm --prefix server run test",
-    "postinstall": "lerna bootstrap"
+    "lint:server": "npm --prefix server run typecheck",
+    "postinstall": "lerna bootstrap",
+    "prepare": "husky install",
+    "test:server": "npm --prefix server run test"
   },
   "dependencies": {
     "husky": "^7.0.1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:server"
+      "pre-commit": "npm run lint:server && npm run test:server"
     }
   }
 }
