@@ -1,7 +1,10 @@
 {
- "client": "npm",
- "name": "@rangk/common",
- "version": "0.1.0",
- "private": true,
- "main": "index.ts"
+	"client": "npm",
+	"name": "@rangk/common",
+	"version": "0.1.0",
+	"private": true,
+	"main": "index.ts",
+	"scripts": {
+		"lint": "../server/node_modules/.bin/tslint -c tslint.json -p './tsconfig.json' --fix"
+	}
 }

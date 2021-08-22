@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run lint:server && npm run typecheck:server
+npm run lint:common && npm run lint:server && npm run typecheck:server

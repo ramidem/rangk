@@ -1,6 +1,10 @@
 import express, { Request, Response } from 'express';
 import helmet from 'helmet';
 
+import { apples } from '@rangk/common/src/User';
+
+const mansanas = apples;
+
 const app = express();
 
 app.use(helmet());
