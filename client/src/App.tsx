@@ -1,18 +1,13 @@
-import './App.css';
-
-import User from '@rangk/common/src/User';
-
-const user: User = {
-  firstName: 'Marco',
-  lastName: 'Polo',
-}
+import { StrictMode } from 'react';
+import ReactDOM from 'react-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello, {user.firstName}</h1>
-    </div>
-  );
+  return <h1>Hello!</h1>;
 }
 
-export default App;
+ReactDOM.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  document.getElementById('root'),
+);
