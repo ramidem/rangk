@@ -23,6 +23,6 @@
     "typecheck:server": "npm --prefix server run typecheck"
   },
   "dependencies": {
-    "husky": "^7.0.1"
+    "husky": "^7.0.2"
   }
 }
